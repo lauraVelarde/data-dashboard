@@ -3,12 +3,95 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+    <link rel="icon" href="assets/icons/lab.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/icons/style.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-
+    <!--header-->
+    <header>
+      <figure>
+        <img src="assets/images/logo-laboratoria.svg" alt="logo">
+      </figure>
+      <div class="icon">
+        <span class="icon-menu"></span>
+      </div>
+    </header>
+    <!--section que contiene las dos barras de navegación-->
+    <section>
+      <nav>
+        <select name="salect-sede" id="select-lima">
+          <option value="">Lima</option>
+          <option value="2016-II">2016-II</option>
+          <option value="2017-I">2017-I</option>
+          <option value="2017-II">2017-II</option>
+        </select>   
+        <select name="select-sede" id="select-aqp">
+          <option value="">Arequipa</option>
+          <option value="2016-II">2016-II</option>
+          <option value="2017-I">2017-I</option>
+        </select>
+        <select name="select-sede" id="select-sdc">
+          <option value="">Santiago</option>
+          <option value="2016-II">2016-II</option>
+          <option value="2017-I">2017-I</option>
+          <option value="2017-II">2017-II</option>
+        </select>
+        <select name="select-sede" id="select-cdm">
+          <option value="">México</option>
+          <option value="2017-I">2017-I</option>
+          <option value="2017-II">2017-II</option>
+        </select>
+        <ul>
+          <li><a href="#">OVERVIEW</a></li>
+          <li><a href="#">STUDENTS</a></li>
+          <li><a href="#">TEACHER</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!--main-->
+    <main>
+      <section id="total">
+        <div>
+          <h3>ENROLLMENT</h3>
+          <div>
+            <h3>120</h3>
+            <h4># STUDENTS CURRENTLY ENROLLED</h4>
+          </div>
+          <div>
+            <h3>20%</h3>
+            <h4>% DROPOUT</h4>
+          </div>
+        </div>
+        <div>
+          <h3>ACHIEVEMENT</h3>
+          <div>
+            <h3>105</h3>
+            <h4># STUDENTS THAT MEET THE TARGET</h4>
+          </div>
+          <div>
+            <h3>78% &Delta;</h3>
+            <h4>% OF TOTAL(135)</h4>
+          </div>
+        </div>
+        <div>
+          <h3>NET PROMOTER SCORE</h3>
+          <div>
+            <h3>78% &Delta;</h3>
+            <h4>% CUMULATIVE NPS</h4>
+          </div>
+          <div>
+            <h3>60 %  Promoters</h3>
+            <h3>30 % Passive</h3>
+            <h3>10 % Detractors</h3>
+          </div>
+        </div>
+      </section>
+    </main>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
-		<!-- Aquí va tus archivos JS -->
+		<!-- Aquí va tus archivos JS --> 
     <script src="./js/app.js"></script>
   </body>
 </html>
